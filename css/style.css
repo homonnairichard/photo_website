@@ -1,0 +1,267 @@
+/* Alap stílusok */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    text-align: justify;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.gallery img {
+    display: none; /* Kezdetben mind a képek legyenek rejtve */
+    width: 100%;
+    height: auto;
+}
+
+.navi {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: chocolate;
+    text-align: center;
+    padding: 2%;
+}
+
+p {
+    font-size: 24px;
+}
+
+.logo {
+    max-width: 350px;
+    float: left;
+}
+
+.nav-link {
+    font-size: 32px;
+    padding: 2%;
+    color: black;
+    text-decoration: none;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 8px;
+    border: solid 3px black;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    color: #666;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container div {
+    flex: 1;
+    margin-right: 1%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+hr {
+    width: 25%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.fo-div {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.kis-div {
+    width: 3%;
+}
+
+.footer-div {
+    background-color: rgb(169, 169, 169);
+}
+
+.mellek-div {
+    max-width: 50%;
+}
+
+.bemutatkoz-szoveg {
+    font-size: 28px;
+}
+
+.hatter {
+    position: relative;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 20px 40px;
+    background-image: linear-gradient(to bottom right, transparent 49%, chocolate 50%);
+    background-size: 200% 200%;
+    background-position: top left;
+    animation: animateWater 7s linear infinite;
+    transition: background-position 0.5s ease;
+}
+
+@keyframes animateWater {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: bottom right;
+    }
+}
+
+.img {
+    transition: transform 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+/* ... (Előző kód rész) ... */
+
+/* Media query a reszponzív elrendezéshez */
+@media screen and (max-width: 768px) {
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .navi {
+        flex-direction: column;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-container div {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+
+    hr {
+        width: 25%;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+    
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+
+    .fo-div {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .kis-div {
+        width: 3%;
+    }
+
+    .footer-div {
+        background-color: rgb(169, 169, 169);
+    }
+
+    .mellek-div {
+        max-width: 100%;
+    }
+
+    .bemutatkoz-szoveg {
+        font-size: 28px;
+    }
+
+    .hatter {
+        position: relative;
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+        display: inline-block;
+        padding: 20px 40px;
+        background-image: linear-gradient(to bottom right, transparent 49%, chocolate 50%);
+        background-size: 200% 200%;
+        background-position: top left;
+        animation: animateWater 7s linear infinite;
+        transition: background-position 0.5s ease;
+    }
+
+    @keyframes animateWater {
+        0% {
+            background-position: top left;
+        }
+        100% {
+            background-position: bottom right;
+        }
+    }
+
+    .img {
+        transition: transform 0.3s ease;
+    }
+
+    .img:hover {
+        transform: scale(1.1);
+    }
+}
