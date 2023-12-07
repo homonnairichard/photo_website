@@ -13,10 +13,12 @@ body {
 }
 
 .gallery img {
-    display: none; /* Kezdetben mind a képek legyenek rejtve */
+    display: none;
     width: 100%;
+    max-width: 100%; /* Hozzáadott sor: A képek maximális szélessége 100% lesz */
     height: auto;
 }
+
 
 .navi {
     display: flex;
