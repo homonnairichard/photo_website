@@ -42,6 +42,8 @@ p {
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-direction: row; /* Az ikonok egymás mellé rendezése */
+    justify-content: flex-start; /* Visszaállítjuk az elrendezés balra igazítását */
 }
 
 .navi .nav-icons li {
@@ -51,10 +53,11 @@ p {
 .navi .nav-icons a {
     text-decoration: none;
     color: black;
-    display: inline-block; /* Ez az új szabály biztosítja, hogy az ikonok egymás mellett jelenjenek meg */
+    display: inline-block;
     font-size: 30px;
     padding: 10px;
 }
+
 
 /* Különböző háttérszínek az egyes ikonokhoz (opcionális) */
 .navi .fa-facebook,
@@ -204,8 +207,8 @@ hr {
         font-family: Arial, sans-serif;
     }
 
-    .img{
-        max-width: 100%;
+    .img2{
+        max-width: 90%;
     }
 
     .navi {
