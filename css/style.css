@@ -204,6 +204,10 @@ hr {
         font-family: Arial, sans-serif;
     }
 
+    .img{
+        max-width: 100%;
+    }
+
     .navi {
         flex-direction: column;
     }
@@ -212,7 +216,7 @@ hr {
         max-width: 100%;
         height: auto;
     }
-
+    
     .image-container div {
         flex: 0 0 100%;
         margin-bottom: 10px;
