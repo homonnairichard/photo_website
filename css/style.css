@@ -27,9 +27,43 @@ body {
     padding: 2%;
 }
 
+li{
+    list-style-type: none; 
+    padding: 0; 
+}
+
 p {
     font-size: 24px;
 }
+
+.navi .nav-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.navi .nav-icons li {
+    margin-right: 10px;
+}
+
+.navi .nav-icons a {
+    text-decoration: none;
+    color: black;
+    display: inline-block; /* Ez az új szabály biztosítja, hogy az ikonok egymás mellett jelenjenek meg */
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* Különböző háttérszínek az egyes ikonokhoz (opcionális) */
+.navi .fa-facebook,
+.navi .fa-instagram,
+.navi .fa-youtube,
+.navi .fa-envelope {
+    background: #3B5998;
+    color: white;
+}
+
+
 
 .logo {
     max-width: 350px;
